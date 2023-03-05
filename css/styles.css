@@ -93,7 +93,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* =========== Header =========== */
+/* =========== HEADER =========== */
 header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -154,12 +154,12 @@ header {
 .address-link:focus {
   color: var(--link-hover-color);
 }
-/* ============ Hero ============ */
+/* ============ HERO ============ */
 .hero {
   text-align: center;
   padding: 188px 0;
   background-color: var(--background-color);
-  /* max-width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -191,7 +191,7 @@ header {
   background: var(--link-hover-color);
   cursor: pointer;
 }
-/* ========= Advantages ============= */
+/* ========= ADVANTAGES ============= */
 .advantages {
   padding: 120px 0;
 }
@@ -218,7 +218,7 @@ header {
 .advantages-text {
   color: var(--main-text-color);
 }
-/* ========== Doing ============= */
+/* ========== DOING ============= */
 .doing {
   padding-bottom: 120px;
 }
@@ -234,7 +234,7 @@ header {
 .doing-item {
   width: calc((100% - gap * 2) / 3);
 }
-/* ============ Team =========== */
+/* ============ TEAM =========== */
 .team {
   background: #f4f4fd;
   padding: 120px 0;
@@ -292,7 +292,7 @@ header {
 .team-social-icon {
   fill: #f4f4fd;
 }
-/* ========= Costumers ======== */
+/* ========= COSTUMERS ======== */
 .costumes {
   padding-top: 130px;
   padding-bottom: 120px;
@@ -326,7 +326,7 @@ header {
   fill: currentColor;
 }
 
-/* ===== Portfolio: Filter + Projects ===== */
+/* ===== Portfolio: FILTER and PROJECTS ===== */
 
 .filter {
   padding-top: 96px;
@@ -353,6 +353,9 @@ header {
   color: #ffffff;
   background: var(--link-hover-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .projects-list {
   display: flex;
@@ -363,16 +366,16 @@ header {
 .projects-item {
   width: calc((100% - column-gap * 3) / 4);
 }
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .projects-item-content {
   padding: 32px 16px;
   background: #ffffff;
   border: 1px solid #e7e9fc;
   border-top: 0;
-}
-.projects-item-content:hover,
-.projects-item-content:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .projects-subtitle {
   color: var(--subtitle-color);
@@ -382,14 +385,18 @@ header {
   color: var(--main-text-color);
 }
 
-/* ======== Footer ========*/
+/* ======== FOOTER ========*/
 .footer {
   background: var(--background-color);
   padding: 100px 0;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
 }
-
+.footer-container {
+  display: flex;
+  align-items: centre;
+  gap: 120px;
+}
 .footer-logo {
   color: #f4f4fd;
   margin-bottom: 16px;
@@ -401,12 +408,12 @@ header {
   color: #e7e9fc;
   max-width: 264px;
 }
-.footer-social {
-  display: flex;
-}
+/* .footer-social {
+} */
 .footer-social-text {
   font-weight: 500;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 .footer-social-list {
   display: flex;
