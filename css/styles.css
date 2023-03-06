@@ -368,8 +368,9 @@ header {
 .projects-item {
   width: calc((100% - column-gap * 3) / 4);
 }
-.projects-item:hover,
-.projects-item:focus {
+.projects-link:hover,
+.projects-link:focus {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
